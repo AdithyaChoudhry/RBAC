@@ -43,10 +43,16 @@ Command3:npm init -y
 
 5.Insert these values in table for get admin access then only you can login
 
-INSERT INTO `users` (`id`, `uuid`, `name`, `email`, `password`, `role`, `createdAt`, `updatedAt`) VALUES (NULL, 'b0c8606b-fe84-4765-9a8f-fb438e302964', 'Adminn', 'user@gmail.com', '$argon2id$v=19$m=65536,t=3,p=4$OINe+Jp9Y2g2j2L5qWvXMg$lK1cGxZqXWWw/UCpTCKi9dIhqlOqwiRk8nulitvkddY', 'user', '2024-11-26 18:05:21', '2024-11-26 18:05:21')
+INSERT INTO `users` (`id`, `uuid`, `name`, `email`, `password`, `role`, `createdAt`, `updatedAt`) VALUES (NULL, 'b0c8606b-fe84-4765-9a8f-fb438e302964', 'Adminn', 'user@gmail.com', '$argon2id$v=19$m=65536,t=3,p=4$OINe+Jp9Y2g2j2L5qWvXMg$lK1cGxZqXWWw/UCpTCKi9dIhqlOqwiRk8nulitvkddY', 'admin', '2024-11-26 18:05:21', '2024-11-26 18:05:21')
+
+6.Port number in xampp and database.js should be same
+
+7.create .env file in backend and keep 
+APP_PORT = 5000
+SESS_SECRET = 2nhsdaesd643n4fmwef75n3rewjewfkj854nefkjdshfkdsjh73nsmfndsk
 
 
-6.Running the APP
+8.Running the APP
     1.Backend- Nodemon -V
     2.Frontend-  1.npm run build  2.npm start
 
